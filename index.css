@@ -16,10 +16,11 @@ body {
 }
 
 .output {
-    background-color: grey;
+    background-color: white;
     text-align: right;
     font-size: 25px;
     margin: auto;
+    width: 250px;
 }
 
 .row {
