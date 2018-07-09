@@ -1,8 +1,8 @@
-// $('.btn').click(function(event){
-//     var thingClicked = this.innerHTML
-//     console.log("you clicked: ", thingClicked)
-//         $(".output").html(thingClicked)
-// });
+$(".btn").click(function(event) {
+    var thingClicked = this.innerHTML
+    console.log("you clicked: ", thingClicked)
+     $("#output").html(thingClicked)
+   }) 
 
 // var btnClick = 
 // document.querySelector(".btn");
@@ -11,8 +11,8 @@
 //     concole.log(".btn".val());
 // });
 
-var btnClick = document.getElementById("#btn");
+// var btnClick = document.getElementById("#btn");
 
-btnClick.addEventListener("click", function(){
-    console.log("clicked!"); 
-})
+// btnClick.addEventListener("click", function(){
+//     console.log("clicked!"); 
+// })
