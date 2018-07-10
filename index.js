@@ -1,18 +1,32 @@
-$(".btn").click(function(event) {
-    var thingClicked = this.innerHTML
-    console.log("you clicked: ", thingClicked)
-     $("#output").html(thingClicked)
-   }) 
+$(document).ready(function(){ //when this document runs - this starts!
+// stores inputs from user to calculate later (it'll be an array)
+var inputs=[""];
+// the output string
+var totalString;
+//operators array for validation without the .
+var operators1 = ["+", "-", "/", "*"];
+//operators array with the . for validation
+var operators2=["."];
+//numbers for validation 
+var nums = [0,1,2,3,4,5,6,7,8,9];
 
-// var btnClick = 
-// document.querySelector(".btn");
-// btnClick.addEventListener("click", function(){
-//     document.querySelector(".output").innerHTML = ".btn".val();
-//     concole.log(".btn".val());
-// });
+function getValue(input){
 
-// var btnClick = document.getElementById("#btn");
+}
 
-// btnClick.addEventListener("click", function(){
-//     console.log("clicked!"); 
-// })
+function update(){
+    totalString = inputs.join("");
+    $("#steps").html(totalString);
+}
+
+function getTotal(){
+    totalString = inputs.join("");
+    $("#steps").html(eval(totalString));
+
+}
+
+$("a").on("click", function(){
+    if(this.id)
+});
+
+});
